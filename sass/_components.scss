@@ -1,0 +1,216 @@
+// General \\
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 50px;
+}
+
+
+// Buttons \\
+
+
+.btn-standard {
+	@include button-style;
+}
+
+.btn-round {
+	@include button-style;
+	width: 50px;
+	img {
+		height: 30px;
+		width: 30px;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+.btn-chose {
+	@include button-style;
+	background-color: $black;
+	width: 120px;
+}
+
+
+// Services Component \\
+
+
+.services-component {
+	background: $black;
+	height: 210px;
+	width: 285px;
+	padding: 0 30px;
+	color: $white;
+	text-align: center;
+	border-left: 1px solid $paragraph-grey;
+	@include component-description;
+}
+.quality-icon-img {
+	background: $black;
+	margin: 10px auto;
+}
+
+
+
+// Section Title and Description \\
+
+
+.heading-and-description {
+	@include section-description;
+	border: 1px solid orange;
+}
+
+
+// Button Bar \\
+
+
+.button-bar {
+	max-width: 650px;
+	border-radius: 50px;
+	background: $button-bar-background;
+	margin: 50px;
+	display: flex;
+}
+.btn-bar {
+	height: 50px;
+	flex: 1;
+	line-height: 12px;	
+	padding: 3px;
+	border: none;
+	background: $button-bar-background;
+	margin: 0;
+	font-weight: $paragraph-font-weight;
+	
+	font-family: $font-mont;
+	font-size: $button-font-size;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid $border-grey;
+	a {
+		color: $grey;
+		text-decoration: none;
+	}
+	p{
+		padding: 15px;
+	}
+	&:hover .in{
+	  opacity: 1;
+	}
+}
+.in {
+	height: 3px;
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex: 1;
+	z-index: 2;
+	opacity: 0;
+	background: $button-color;
+	justify-content: center;
+	transform: translateY(-20px);
+}
+
+.button-bar1 {
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	padding-left: 30px;
+}
+
+.button-bar6 {
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	padding-right: 30px;
+}
+
+.top-line {
+	border-bottom: 3px solid $button-bar-background;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 490px;
+	z-index: 1;
+	transform: translate(120px, 24px);
+
+}
+.bottom-line {
+	border-bottom: 3px solid $button-bar-background;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 490px;
+	z-index: 0;
+	transform: translate(120px, -54px);
+
+}
+
+// Bootstrap Button Bar \\
+
+.btn-group {
+margin: 50px;
+}
+
+.btn {
+	height: 50px;
+	min-width: 50px;
+	padding: 20px;
+	border: none;
+	background: $button-bar-background;
+	margin: 0;
+	border: none;
+	line-height: 10px;	
+	font-weight: $paragraph-font-weight;
+	color: $grey;
+	font-family: $font-mont;
+	font-size: $button-font-size;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid $border-grey;
+	&:hover {
+		color: $grey;
+		border: 1px solid $border-grey;
+		background-color: $button-bar-background;
+	  border-bottom: 3px solid $button-color;
+	}
+}
+
+.btn-1 {
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	padding-left: 50px;
+}
+
+.btn-6 {
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	padding-right: 50px;
+}
+
+// Template \\
+
+
+.button-bar-special{
+display: flex;
+border: 1px solid orange;
+}
+.outer1{
+	height: 300px;
+	width: 150px;
+	border: 1px solid $border-grey;
+	display: flex;
+	align-items: flex-end;
+}
+.inner1{
+	height: 290px;
+	width: 140px;
+	border: 1px solid orange;
+	margin: 0 auto;
+	border-left: 5px solid violet;
+	border-right: 5px solid violet;
+	text-align: center;
+	&:hover {
+	  border-bottom: 3px solid $button-color;
+	}
+}

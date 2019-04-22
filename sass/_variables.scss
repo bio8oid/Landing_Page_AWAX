@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,900&subset=latin-ext');
+
+
+
+/* Colors */
+$paragraph-grey: #7e7e7e;
+$title-paragraph-grey: #aeaeae;
+$button-color: #b88b58;
+$white: #fff;
+$black: #000;
+$grey: #5f5f5f;
+$border-grey: #cfcfcf;
+$button-bar-background: #f7f7f7;
+
+
+$link-color: #56819f;
+$divider-color: #e3e3e3;
+$body-color: #f5f5f2;
+
+/* Font sizes */
+$paragraph-font-size: 12px;
+$section-heading-font-size: 24px;
+$button-font-size: 12px;
+$heading-size: 18px;
+
+/* Font weights */
+$paragraph-font-weight: 500;
+$light-weight: 400;
+$title-font-weight: 700;
+$button-font-weight: 600;
+
+/* Fonts */
+$font: "Open Sans", Helvetica, Arial;
+$font-mont: 'Montserrat', sans-serif;
+
+@mixin button-style {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: $button-color;
+  font-weight: $button-font-weight;
+  color: $white;
+  font-family: $font-mont;
+  font-size: $button-font-size;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #f39c12;
+  }
+}
+
+
+@mixin component-description {
+h4 {
+	font-weight: $button-font-weight;
+	font-size: $heading-size;
+	font-family: $font-mont;
+	text-align: center;
+	//border: 1px solid orange;
+	margin: 0;
+	line-height: 22px;
+	}
+	p {
+	color: $paragraph-grey;
+	font-size: $paragraph-font-size;
+	font-family: $font-mont;
+	font-weight: $paragraph-font-weight;
+	//border: 1px solid orange;
+	margin: 0;
+	line-height: 22px;
+	}
+}
+
+@mixin section-description {
+	h2 {
+	font-weight: $title-font-weight;
+	font-size: $section-heading-font-size;
+	font-family: $font-mont;
+	text-align: center;
+	//border: 1px solid orange;
+	margin-top: 65px;
+	line-height: 22px;
+	}
+	p {
+	color: $title-paragraph-grey;
+	font-size: $paragraph-font-size;
+	font-family: $font-mont;
+	font-weight: $title-font-weight;
+	text-align: center;
+	//border: 1px solid orange;
+	margin-bottom: 50px;
+	line-height: 0px;
+	}
+}
+
+
+
+//@mixin centering {
+//  margin: 0 auto;
+//  text-align: center;
+//}
+//
+//@mixin section-heading {
+//  h1 {
+//    font-size: 40px;
+//    font-weight: 700;
+//    color: ;
+//    font-family: $font-family-mon;
+//  }
+//  p {
+//    font-size: 18px;
+//    color: ;
+//    font-family: $font-family-droid;
+//    font-weight: 400;
+//    font-style: italic;
+//  }
+//}
+//
+//@mixin section-description {
+//  h3 {
+//    font-size: 18px;
+//    letter-spacing: 0px;
+//    font-family: $font-family-mon;
+//    font-weight: 700;
+//    color: ;
+//  }
+//  p {
+//    font-size: 14px;
+//    letter-spacing: 0px;
+//    color: ;
+//    font-family: $font-family-robo;
+//    font-weight: 400;
+//    font-style: normal;
+//
+//  }
+//
+//}
+//
+//.section-heading {
+//  @include section-heading;
+//  h1 {
+//    margin-top: 50px;
+//  }
+//  p {
+//    margin-bottom: 50px;
+//  }
+//}
