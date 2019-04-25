@@ -1,0 +1,95 @@
+
+
+
+//--------------------------------    SECTIONS	-----------------------------\\
+
+
+
+		//  NAVBAR  \\
+
+
+.back {
+	background-color: $black
+}
+
+.navbar, .main-nav {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	height: 80px;
+	width: 80px;
+}
+
+.main-nav a {
+	height: 100px;
+	padding: 0 8px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	color: $white;
+	font-size: $paragraph-font-size;
+	font-family: $font-mont;
+	font-weight: $button-font-weight;
+	line-height: 100px;
+	&:hover {
+	border-bottom: 5px solid $button-color;
+	}
+}
+
+		//  HERO  \\
+
+.hero {
+	display: flex;
+	//justify-content: center;
+	
+}
+
+.hero-bkg {
+	width: 100%;
+	margin-top: 20%;
+	//min-height: 750px;
+	//align-items: center;
+	text-align: center;
+	h1, h2 {
+		font-size: 50px;
+		font-weight: $title-font-weight;
+		color: $white;
+		line-height: 20px;
+	}
+	h2 {
+		color: $button-color;
+	}
+	h4 {
+		color: $white;
+		font-size: 20px;
+		font-weight: $title-font-weight;
+		margin: 20px;
+	}
+}
+
+.btn-hero {
+	margin: 20px;
+}
+
+.dotties {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+	margin-bottom: 20px;
+}
+
+.dot {
+	border: 2px solid $button-color;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	margin: 5px;
+	&:hover {
+		background-color: $button-color;
+	}
+
+}

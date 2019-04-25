@@ -28,6 +28,7 @@ $paragraph-font-weight: 500;
 $light-weight: 400;
 $title-font-weight: 700;
 $button-font-weight: 600;
+$full-weight: 900;
 
 /* Fonts */
 $font: "Open Sans", Helvetica, Arial;
@@ -46,7 +47,9 @@ $font-mont: 'Montserrat', sans-serif;
   text-align: center;
   cursor: pointer;
   &:hover {
-    background-color: #f39c12;
+    background-color: $black;
+    animation: wiggle 75ms infinite;
+	animation-timing-function: linear;
   }
 }
 
@@ -95,6 +98,12 @@ h4 {
 }
 
 
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
 
 //@mixin centering {
 //  margin: 0 auto;
