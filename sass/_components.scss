@@ -13,7 +13,7 @@
 }
 
 body {
-	margin: 50px;
+	margin: 0;
 	font-family: $font-mont;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .heading-and-description {
 	@include section-description;
-	border: 1px solid orange;
+	//border: 1px solid orange;
 }
 
 
@@ -108,7 +108,7 @@ body {
 	max-width: 650px;
 	border-radius: 50px;
 	background: $button-bar-background;
-	margin: 50px;
+	margin: 50px auto;
 	display: flex;
 }
 .btn-bar {
@@ -186,7 +186,7 @@ body {
 // Bootstrap Button Bar \\
 
 .btn-group {
-margin: 50px;
+margin: 50px auto;
 }
 
 .btn {
@@ -260,8 +260,7 @@ border: 1px solid orange;
 .gallery-image {
 	width: 255px;
 	height: 165px;
-	//background-image: cover;
-	//background-position: center center;
+	margin: 0 auto;
 }
 .layer{
   display: none;
@@ -291,6 +290,7 @@ border: 1px solid orange;
 
 
 .team-item {
+	margin: 0 auto;
 	width: 350px;
 	height: 430px;
   	@include component-description;
@@ -299,14 +299,13 @@ border: 1px solid orange;
 	h4 {
 		margin: 10px;
 		font-size: 20px;
-	}
+	} 
 	p {
 		font-size: 14px;
 	}
 	&:hover {
 		transform: scale(1.05);
 		transition: 1s;
-
 	}
 }
 
@@ -372,6 +371,10 @@ border: 1px solid orange;
 //  Icon Bar Icons  \\
 
 
+.iconbar {
+	margin: 0 auto;
+}
+
 .fab {
 	background-color: $grey;
 	height: 35px;
@@ -396,6 +399,7 @@ border: 1px solid orange;
 
 
 .price-item {
+	margin: 0 auto;
 	padding: 20px;
 	@include component-description;
 	text-align: center;
@@ -434,6 +438,7 @@ border: 1px solid orange;
 
 
 .facts-component {
+	margin: 0 auto;
 	background: $black;
 	height: 210px;
 	width: 180px;

@@ -75,21 +75,25 @@
 	margin: 20px;
 }
 
-.dotties {
-	display: flex;
-	justify-content: center;
-	margin-top: 15%;
-	margin-bottom: 20px;
+
+//  ABOUT US  \\
+
+
+.video {
+	height: 275px;
+	background-image: cover;
+	background-position: center center;
+	max-width: 445px;
+	box-shadow: -10px 11px 52px -2px rgba(0,0,0,0.49);
+	margin-bottom: 90px;
 }
 
-.dot {
-	border: 2px solid $button-color;
-	border-radius: 50%;
-	height: 12px;
-	width: 12px;
-	margin: 5px;
-	&:hover {
-		background-color: $button-color;
-	}
+.text p {
+	font-size: $description-font-size;
+	margin: 0;
+	line-height: 28px;
+}
 
+.about {
+	margin: 40px 0;
 }
