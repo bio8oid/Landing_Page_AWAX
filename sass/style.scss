@@ -4,3 +4,133 @@
 @import 'sections';
 @import 'layout';
 
+
+
+
+/*
+=============================== MEDIA =========================================
+*/
+
+
+
+@media (max-width: 786px) {
+
+
+  // About Us \\
+
+  .text {
+  	text-align: center;
+  }
+  .video {
+  	margin: 0 auto;
+  }
+
+
+	// Services \\
+
+
+	.quality, .regular {
+		border-right: 1px solid $paragraph-grey;
+	}
+
+// Button Bar \\
+
+.button-bar {
+	//flex-direction: column;
+	background-color: $white;
+	display: block;
+}
+.btn-bar {
+	width: 250px;
+	margin: 10px auto;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	text-align: center;
+	padding: 0;
+	&:hover a{
+	  color: $button-color;
+	}
+	&:hover .in{
+	  opacity: 0;
+	  background-color: $button-color;
+	}
+}
+
+.top-line {
+	display: none;
+}
+.bottom-line {
+	display: none;
+}
+
+
+// Gallery \\
+
+
+.gallery {
+	padding: 0 5%;
+}
+.gallery-image {
+	margin: 15px auto;
+}
+
+}
+
+
+
+@media (max-width: 996px) {
+
+  // Navbar \\
+
+  .navbar, .main-nav, .logo {
+  	flex-direction: column;
+  	align-items: center;
+
+  }
+
+  li:last-of-type{
+  	margin-bottom: 20%;
+  }
+
+  .main-nav a {
+  	height: 30px;
+  	line-height: 30px;
+  }
+
+
+// Services \\
+
+
+.modern {
+	border-right: 1px solid $paragraph-grey;
+}
+
+// Services \\
+
+
+.gallery {
+	padding: 0 20%;
+}
+
+}
+
+@media(max-width: 1100px) {
+	.navbar {
+		justify-content: center;
+		padding: 0 5%;
+	}
+	.logo {
+		margin: 0;
+		transition: 1s;
+	}
+}
+
+@media (min-width: 1100px) {
+
+	.navbar {
+		justify-content: center;
+	}
+
+}

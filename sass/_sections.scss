@@ -8,10 +8,6 @@
 		//  NAVBAR  \\
 
 
-.back {
-	background-color: $black
-}
-
 .navbar, .main-nav {
 	display: flex;
 	list-style: none;
@@ -22,6 +18,7 @@
 .logo {
 	height: 80px;
 	width: 80px;
+	margin-right: 15%;
 }
 
 .main-nav a {
@@ -96,4 +93,20 @@
 
 .about {
 	margin: 40px 0;
+}
+
+
+//  SERVICES  \\
+
+
+.services h2 {
+	color: $white;
+}
+
+.last {
+	border-right: 1px solid $paragraph-grey;
+}
+
+.extend {
+	border-bottom: 50px solid $black;
 }
