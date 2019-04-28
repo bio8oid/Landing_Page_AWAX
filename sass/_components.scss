@@ -420,13 +420,14 @@ border: 1px solid orange;
 
 
 .price-item {
-	margin: 0 auto;
+	margin: 10px;
 	padding: 20px;
+	background-color: $white;
+	box-shadow: 10px 10px 83px -29px rgba(0,0,0,0.35);
 	@include component-description;
 	text-align: center;
 	width: 255px;
 	height: 345px;
-	border: 1px solid orange;
 	h4 {
 		font-size: 16px;
 		margin: 5px;
