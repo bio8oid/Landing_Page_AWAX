@@ -143,9 +143,6 @@
 .team-wrapper {
 	padding-bottom: 15px;
 }
-//.team-dotties {
-//	margin-top: 15px;
-//}
 
 
 		//  CLIENTS  \\
@@ -178,7 +175,7 @@
 	margin-bottom: 30px;
 	&:hover{ 
   	transform: scale(1.2);
-  	transition: 1s;  
+  	transition: 0.5s;  
 	}
 }
 .client-dotties {
@@ -193,7 +190,6 @@
 	display: flex;
 	justify-content: center;
 	padding:30px 50px;
-	border: 1px solid #000;
 	flex-wrap: wrap;
 }
 
@@ -203,6 +199,10 @@
 	margin:0 30px;
 	background-size: cover;
 	background-position: center center;
+	&:hover{ 
+  	transform: scale(1.2);
+  	transition: 0.5s;  
+	}
 }
 
 
@@ -222,18 +222,66 @@
 }
 
 
+		//  PREMIUM  \\
 
 
+.premium-wrapper {
+	display: flex;
+	@include component-description;
+	border-bottom: 1px solid $border-grey;
+	p {
+		margin-left: 60px;
+		color: $title-paragraph-grey;
+		font-weight: $light-weight;
+		letter-spacing: -1px;
+		max-width: 350px;
+	}
+	h4 {
+		margin-top: 28px;
+	}
+}
+
+.premium-left-column {
+	width: 40%;
+	margin-right: 80px;
+}
+.premium-right-column {
+	width: 40%;
+	padding-top: 30px;
+}
+.tick-img {
+	height: 40px;
+	width: 40px;
+	margin-right: 20px;
+	margin-top: 20px;
+	background-size: cover;
+	background-position: center center;
+}
+.premium {
+	max-width: 465px;
+	height: 400px;
+	background-size: cover;
+	background-position:  center right;
+	&:hover {
+    animation: wiggle 75ms infinite;
+	animation-timing-function: linear;
+  }
+}
+.premium-tick {
+	display: flex;
+}
+.premium-btn {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
 
 
+		//  SOME FACTS \\
 
-
-
-
-
-
-
-
+.some-facts {
+	color: $white;
+}
 
 
 

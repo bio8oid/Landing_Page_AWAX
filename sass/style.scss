@@ -13,15 +13,95 @@
 
 
 
+
+@media(max-width: 1100px) {
+	.navbar {
+		justify-content: center;
+		padding: 0 5%;
+	}
+	.logo {
+		margin: 0;
+		transition: 1s;
+	}
+
+// Premium \\
+
+.premium-wrapper {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	p {
+		width: 100%;
+	}
+}
+.premium-left-column {
+	width: 100%;
+	margin: 0 auto;
+}
+.premium-right-column {
+	width: 50%;
+	margin-bottom: 30px;
+}
+.premium {
+	margin: 0 auto;
+}
+
+
+}
+
+
+
+@media (min-width: 1100px) {
+
+	.navbar {
+		justify-content: center;
+	}
+
+}
+
+
+
+@media (max-width: 996px) {
+
+  // Navbar \\
+
+  .navbar, .main-nav, .logo {
+  	flex-direction: column;
+  	align-items: center;
+  }
+  li:last-of-type{
+  	margin-bottom: 20%;
+  }
+  .main-nav a {
+  	height: 30px;
+  	line-height: 30px;
+  }
+
+// Services \\
+
+.modern {
+	border-right: 1px solid $paragraph-grey;
+}
+
+// Gallery \\
+
+.gallery {
+	padding: 0 20%;
+}
+
+}
+
+
+
+
+
 @media (max-width: 786px) {
 
   // Hero \\
 
-
   .hero-bkg h1 {
-	line-height: 45px;
-}
-
+  	line-height: 45px;
+  }
 
   // About Us \\
 
@@ -32,9 +112,7 @@
   	margin: 0 auto;
   }
 
-
 	// Services \\
-
 
 	.quality, .regular {
 		border-right: 1px solid $paragraph-grey;
@@ -43,7 +121,6 @@
 // Button Bar \\
 
 .button-bar {
-	//flex-direction: column;
 	background-color: $white;
 	display: block;
 }
@@ -57,14 +134,13 @@
 	text-align: center;
 	padding: 0;
 	&:hover a{
-	  color: $button-color;
+		color: $button-color;
 	}
 	&:hover .in{
-	  opacity: 0;
-	  background-color: $button-color;
+		opacity: 0;
+		background-color: $button-color;
 	}
 }
-
 .top-line {
 	display: none;
 }
@@ -72,9 +148,7 @@
 	display: none;
 }
 
-
 // Gallery \\
-
 
 .gallery {
 	padding: 0 5%;
@@ -83,61 +157,25 @@
 	margin: 15px auto;
 }
 
-}
+// Premium \\
 
-
-
-@media (max-width: 996px) {
-
-  // Navbar \\
-
-  .navbar, .main-nav, .logo {
-  	flex-direction: column;
-  	align-items: center;
-
-  }
-
-  li:last-of-type{
-  	margin-bottom: 20%;
-  }
-
-  .main-nav a {
-  	height: 30px;
-  	line-height: 30px;
-  }
-
-
-// Services \\
-
-
-.modern {
-	border-right: 1px solid $paragraph-grey;
-}
-
-// Services \\
-
-
-.gallery {
-	padding: 0 20%;
-}
-
-}
-
-@media(max-width: 1100px) {
-	.navbar {
-		justify-content: center;
-		padding: 0 5%;
-	}
-	.logo {
-		margin: 0;
-		transition: 1s;
+.premium-right-column {
+	width: 100%;
+	p {
+		text-align: center;
+		margin: 0 auto;
 	}
 }
-
-@media (min-width: 1100px) {
-
-	.navbar {
-		justify-content: center;
-	}
-
+.premium {
+	width: 250px;
+	height: 200px;
+	transition: 1s;
+}
+.premium-tick {
+	flex-direction: column;
+	align-items: center;
+}
+.tick-img {
+	margin: 0 auto;
+}
 }
