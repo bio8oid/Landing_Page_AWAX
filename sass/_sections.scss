@@ -283,19 +283,112 @@
 	color: $white;
 }
 
+		//  TELL ABOUT US \\
+
+.share {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.tell-paragraph {
+	height: 12px;
+	line-height: 12px;
+	margin: 30px 100px 30px 0;
+	font-size: 12px;
+	color: $title-paragraph-grey;
+}
+
+.tell-about, .share, .tell-icons {
+	display: flex;
+	justify-content: center;
+	border: 1px solid #fff;
+}
+
+.tell-icons {
+	margin: 15px;
+}
+
+.pinterest-icon svg {
+	height: 35px;
+}
+
+	//  CONTACT US  \\
 
 
+.contact-us-background {
+	background-color: $button-bar-background;
+	border-top: 1px solid $border-grey;
+	border-bottom: 1px solid $border-grey;
+}
 
+.top-row {
+	display: flex;
+}
 
+input {
+	border: none;
+	padding-bottom: 10px;
+	background-color: $button-bar-background;
+}
 
+input::placeholder {
+	font-size: $paragraph-font-size;
+	font-weight: $title-font-weight;
+	color: $title-paragraph-grey;
+}
 
+.input-row {
+	margin: 0 auto;
+}
 
+.name, .email {
+	width: 47%;
+	border-bottom: 1.5px solid $title-paragraph-grey;
+	margin-bottom: 30px;
+}
 
+.name {
+	margin-right: 6%;
+}
 
+.form {
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+}
 
+.message, .subject {
+	flex: 2;
+	border-bottom: 1.5px solid $title-paragraph-grey;
+}
 
+.message {
+	margin-top: 60px;
+}
 
+.contact-btn {
+	margin-top: 50px;
+	margin-bottom: 70px;
+	display: flex;
+	justify-content: center;
+}
 
+	//  CONTACT US  \\
 
-
-
+.map {
+	padding: 20px;
+}
+.left-section {
+	width: 40%;
+	height: 80%;
+	margin: 20px;
+	background: $white; 
+}
+.ico {
+	width: 35px;
+	height: 35px;
+	background-size: cover;
+	background-position:  center center;
+}

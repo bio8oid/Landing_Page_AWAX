@@ -99,8 +99,11 @@
 
   // Hero \\
 
-  .hero-bkg h1 {
+  .hero-bkg h1{
   	line-height: 45px;
+  }
+  .hero-bkg h2{
+	font-size: 25px;
   }
 
   // About Us \\
@@ -178,4 +181,45 @@
 .tick-img {
 	margin: 0 auto;
 }
+
+//  Tell About  \\
+
+.tell-about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.tell-paragraph {
+	margin: 0 auto;
+}
+
+.number {
+	margin:0 1%;
+}
+
+
+//  Contact US  \\
+
+
+.top-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.name {
+	margin-right: 0;
+}
+.message, .subject, .name, .email {
+	//flex: 1;
+	width: 100%;
+}
+.center {
+	margin: 0 auto;
+}
+input::placeholder {
+	text-align: center;
+}
+
 }

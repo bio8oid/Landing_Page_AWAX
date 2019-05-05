@@ -381,10 +381,11 @@ border: 1px solid orange;
 .number {
 	display: flex;
 	justify-content: center;
+	margin:0 5%;
 	p {
 	font-size: 10px;
 	color: $title-paragraph-grey;
-	margin: auto 0;
+	margin: auto 5px;
 	}
 }
 
