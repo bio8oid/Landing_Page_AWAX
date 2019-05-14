@@ -35,6 +35,9 @@ $full-weight: 900;
 $font: "Open Sans", Helvetica, Arial;
 $font-mont: 'Montserrat', sans-serif;
 
+
+
+
 @mixin button-style {
   width: 200px;
   height: 50px;
@@ -82,7 +85,6 @@ h4 {
 	font-size: $section-heading-font-size;
 	font-family: $font-mont;
 	text-align: center;
-	//border: 1px solid orange;
 	margin-top: 65px;
 	line-height: 22px;
 	}
@@ -92,19 +94,19 @@ h4 {
 	font-family: $font-mont;
 	font-weight: $title-font-weight;
 	text-align: center;
-	//border: 1px solid orange;
 	margin-bottom: 50px;
 	line-height: 15px;
 	}
 }
-
-
 
 @keyframes wiggle {
   0% { transform: translate(2px, 0); }
   50% { transform: translate(-2px, 0); }
   100% { transform: translate(2px, 0); }
 }
+
+
+
 
 //@mixin centering {
 //  margin: 0 auto;
