@@ -35,9 +35,6 @@ $full-weight: 900;
 $font: "Open Sans", Helvetica, Arial;
 $font-mont: 'Montserrat', sans-serif;
 
-
-
-
 @mixin button-style {
   width: 200px;
   height: 50px;
@@ -64,7 +61,6 @@ h4 {
 	font-size: $heading-size;
 	font-family: $font-mont;
 	text-align: center;
-	//border: 1px solid orange;
 	margin: 0;
 	line-height: 22px;
 	}
@@ -73,7 +69,6 @@ h4 {
 	font-size: $paragraph-font-size;
 	font-family: $font-mont;
 	font-weight: $paragraph-font-weight;
-	//border: 1px solid orange;
 	margin: 0;
 	line-height: 22px;
 	}
@@ -104,57 +99,3 @@ h4 {
   50% { transform: translate(-2px, 0); }
   100% { transform: translate(2px, 0); }
 }
-
-
-
-
-//@mixin centering {
-//  margin: 0 auto;
-//  text-align: center;
-//}
-//
-//@mixin section-heading {
-//  h1 {
-//    font-size: 40px;
-//    font-weight: 700;
-//    color: ;
-//    font-family: $font-family-mon;
-//  }
-//  p {
-//    font-size: 18px;
-//    color: ;
-//    font-family: $font-family-droid;
-//    font-weight: 400;
-//    font-style: italic;
-//  }
-//}
-//
-//@mixin section-description {
-//  h3 {
-//    font-size: 18px;
-//    letter-spacing: 0px;
-//    font-family: $font-family-mon;
-//    font-weight: 700;
-//    color: ;
-//  }
-//  p {
-//    font-size: 14px;
-//    letter-spacing: 0px;
-//    color: ;
-//    font-family: $font-family-robo;
-//    font-weight: 400;
-//    font-style: normal;
-//
-//  }
-//
-//}
-//
-//.section-heading {
-//  @include section-heading;
-//  h1 {
-//    margin-top: 50px;
-//  }
-//  p {
-//    margin-bottom: 50px;
-//  }
-//}

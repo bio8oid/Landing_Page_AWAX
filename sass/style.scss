@@ -51,6 +51,7 @@
 
 
 
+
 @media (min-width: 1100px) {
 
 	.navbar {
@@ -58,6 +59,7 @@
 	}
 
 }
+
 
 
 
@@ -103,8 +105,12 @@
 	}
 .footer-col-2 p {
 	text-align: center;
+	margin: 30px;
 	}
 }
+
+
+
 
 @media (max-width: 786px) {
 
@@ -202,7 +208,7 @@
 	align-items: center;
 
 }
-.tell-paragraph {
+.tell-paragraph p{
 	margin: 0 auto;
 }
 
@@ -210,9 +216,7 @@
 	margin:0 1%;
 }
 
-
 //  Contact US  \\
-
 
 .top-row {
 	display: flex;
@@ -246,17 +250,10 @@ input::placeholder {
 	margin: 0 auto;
 	}
 
+	//  Footer  \\
 
-
-	// Footer \\
-
-
-//.footer {
-//	display: flex;
-//	flex-direction: column;
-//	flex-wrap: wrap-reverse;
-//	align-items: center;
-//	//justify-content: center;
-//	}
+.footer-col-2 p{
+	margin: 30px 0;
+}
 
 }

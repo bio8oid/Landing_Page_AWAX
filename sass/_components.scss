@@ -7,7 +7,6 @@
 // General \\
 
 
-
 * {
 	box-sizing: border-box;
 }
@@ -45,6 +44,9 @@ body {
 		background-size: cover;
 		background-position: center center;
 	}
+	&:hover {
+    background-color: $button-color;
+  }
 }
 
 .btn-chose {
@@ -123,7 +125,6 @@ body {
 .btn-bar {
 	height: 50px;
 	flex: 1;
-	line-height: 12px;	
 	padding: 3px;
 	border: none;
 	background: $button-bar-background;
@@ -140,7 +141,7 @@ body {
 		text-decoration: none;
 	}
 	p{
-		padding: 15px;
+		padding: 4px 15px;
 	}
 	&:hover .in{
 	  opacity: 1;
@@ -156,7 +157,7 @@ body {
 	opacity: 0;
 	background: $button-color;
 	justify-content: center;
-	transform: translateY(-20px);
+	transform: translateY(-4px);
 }
 
 .button-bar1 {
@@ -193,6 +194,7 @@ body {
 }
 
 // Bootstrap Button Bar \\
+
 
 .btn-group {
 margin: 50px auto;
@@ -272,7 +274,6 @@ border: 1px solid orange;
 	margin: 15px;
 	padding: 0;
 	background-image: cover;
-	//background-position: center center;
 }
 .wrap {
 	padding: 0;
@@ -483,6 +484,8 @@ border: 1px solid orange;
 		color: $button-color;
 		line-height: 20px;
 		font-family: $font-mont;
+		margin: 0;
+		padding: 0;
 	}
 	p {
 		font-weight: 600;
@@ -491,6 +494,5 @@ border: 1px solid orange;
 		max-width: 180px;
 	}
 }
-
 
 
