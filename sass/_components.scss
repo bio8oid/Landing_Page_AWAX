@@ -91,7 +91,7 @@ body {
 	border-left: 1px solid $paragraph-grey;
 	@include component-description;
 	&:hover .services-icon-img{
-    animation: wiggle 75ms infinite;
+    animation: wiggle 75ms 10;
 	animation-timing-function: linear;
   }
 }
@@ -362,7 +362,7 @@ border: 1px solid orange;
 		width: 35px;
 		fill: $title-paragraph-grey;
 		&:hover{ 
-			animation: wiggle 75ms infinite;
+			animation: wiggle 75ms 8;
 			animation-timing-function: linear;
 			fill: $button-color;   
 		}
@@ -411,7 +411,7 @@ border: 1px solid orange;
 	}
 	&:hover {
 		background-color: $button-color;
-		animation: wiggle 75ms infinite;
+		animation: wiggle 75ms 8;
 	animation-timing-function: linear;
 	}
 }
@@ -443,7 +443,7 @@ border: 1px solid orange;
 		font-size: 32px;
 		margin: 0 ;
 		&:hover { 
-	  animation: wiggle 75ms infinite;
+	  animation: wiggle 75ms 8;
 	  animation-timing-function: linear; 
 	}
 
