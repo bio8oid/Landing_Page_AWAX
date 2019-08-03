@@ -105,8 +105,8 @@
 	line-height: 28px;
 }
 
-.about {
-	margin: 40px 0;
+.btn-about {
+	margin: 40px;
 }
 
 	//  SERVICES  \\
@@ -495,6 +495,7 @@ h4 {
 	padding: 0;
 	margin-bottom: 40px;
 	}
+
 }
 
 .footer-icon-bar {
@@ -510,6 +511,7 @@ h4 {
 
 .footer-btn {
 	display: flex;
+	line-height: 50px;
 	justify-content: center;
 	margin: 0 auto;
 	margin-bottom: 50px;
