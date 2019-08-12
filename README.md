@@ -1,3 +1,3 @@
 # Landing Page
 
-[AWAX](https://bio8oid.github.io/16.8/)
+[AWAX](https://bio8oid.github.io/Landing_Page_AWAX/)
