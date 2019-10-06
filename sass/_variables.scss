@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,900&subset=latin-ext');
-
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,900&subset=latin-ext");
 
 /* Colors */
 $paragraph-grey: #7e7e7e;
@@ -8,10 +6,12 @@ $title-paragraph-grey: #aeaeae;
 $button-color: #b88b58;
 $white: #fff;
 $black: #000;
+$icon-fill-collor: #fff;
+$footer-icon-fill-collor: #373737;
+$footer-paragraph-collor: #999;
 $grey: #5f5f5f;
 $border-grey: #cfcfcf;
 $button-bar-background: #f7f7f7;
-
 
 $link-color: #56819f;
 $divider-color: #e3e3e3;
@@ -33,7 +33,7 @@ $full-weight: 900;
 
 /* Fonts */
 $font: "Open Sans", Helvetica, Arial;
-$font-mont: 'Montserrat', sans-serif;
+$font-mont: "Montserrat", sans-serif;
 
 @mixin button-style {
   width: 200px;
@@ -47,55 +47,64 @@ $font-mont: 'Montserrat', sans-serif;
   font-size: $button-font-size;
   text-align: center;
   cursor: pointer;
+
   &:hover {
     background-color: $black;
-    animation: wiggle 75ms 3;
-	animation-timing-function: linear;
+    @include wiggle;
   }
 }
 
-
 @mixin component-description {
-h4 {
-	font-weight: $button-font-weight;
-	font-size: $heading-size;
-	font-family: $font-mont;
-	text-align: center;
-	margin: 0;
-	line-height: 22px;
-	}
-	p {
-	color: $paragraph-grey;
-	font-size: $paragraph-font-size;
-	font-family: $font-mont;
-	font-weight: $paragraph-font-weight;
-	margin: 0;
-	line-height: 22px;
-	}
+  h4 {
+    font-weight: $button-font-weight;
+    font-size: $heading-size;
+    font-family: $font-mont;
+    text-align: center;
+    margin: 0;
+    line-height: 22px;
+  }
+
+  p {
+    color: $paragraph-grey;
+    font-size: $paragraph-font-size;
+    font-family: $font-mont;
+    font-weight: $paragraph-font-weight;
+    margin: 0;
+    line-height: 22px;
+  }
 }
 
 @mixin section-description {
-	h2 {
-	font-weight: $title-font-weight;
-	font-size: $section-heading-font-size;
-	font-family: $font-mont;
-	text-align: center;
-	margin-top: 65px;
-	line-height: 22px;
-	}
-	p {
-	color: $title-paragraph-grey;
-	font-size: $paragraph-font-size;
-	font-family: $font-mont;
-	font-weight: $title-font-weight;
-	text-align: center;
-	margin-bottom: 50px;
-	line-height: 15px;
-	}
+  h2 {
+    font-weight: $title-font-weight;
+    font-size: $section-heading-font-size;
+    font-family: $font-mont;
+    text-align: center;
+    margin-top: 65px;
+    line-height: 22px;
+  }
+
+  p {
+    color: $title-paragraph-grey;
+    font-size: $paragraph-font-size;
+    font-family: $font-mont;
+    font-weight: $title-font-weight;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 15px;
+  }
 }
 
-@keyframes wiggle {
-  0% { transform: translate(2px, 0); }
-  50% { transform: translate(-2px, 0); }
-  100% { transform: translate(2px, 0); }
+@mixin wiggle {
+
+	&:hover{ 
+		animation: wiggle 75ms infinite;
+		animation-timing-function: linear;   
+	  }
+	  
+	  @keyframes wiggle {
+		0% { transform: translate(2px, 0); }
+		50% { transform: translate(-2px, 0); }
+		100% { transform: translate(2px, 0); }
+	  }
 }

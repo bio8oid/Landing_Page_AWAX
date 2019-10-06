@@ -1,521 +1,564 @@
-
-
-
 //--------------------------------    SECTIONS	-----------------------------\\
 
+//  NAVBAR  \\
 
 
-		//  NAVBAR  \\
-
-
-.navbar, .main-nav {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.navbar,
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
 }
 
 .logo {
-	height: 80px;
-	width: 80px;
-	margin: 10px 15% 0 0;
+  height: 80px;
+  width: 80px;
+  margin: 10px 15% 0 0;
 }
 
 .main-nav a {
-	height: 100px;
-	padding: 0 8px;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	color: $white;
-	font-size: $paragraph-font-size;
-	font-family: $font-mont;
-	font-weight: $button-font-weight;
-	line-height: 100px;
-	&:hover {
-	border-bottom: 5px solid $button-color;
-	}
+  height: 100px;
+  padding: 0 8px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: $white;
+  font-size: $paragraph-font-size;
+  font-family: $font-mont;
+  font-weight: $button-font-weight;
+  line-height: 100px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      border-bottom: 5px solid $button-color;
+    }
+  }
 }
 
-		//  HERO  \\
+
+//  HERO  \\
 
 
 .hero {
-	display: flex;
+  display: flex;
 }
 
-.hero-bkg {
-	width: 100%;
-	margin-top: 20%;
-	text-align: center;
-	background-size: cover;
-	background-position: center center;
-	h1, h2 {
-		font-size: 50px;
-		font-weight: $title-font-weight;
-		color: $white;
-		line-height: 20px;
-	}
-	h2 {
-		color: $button-color;
-	}
-	h4 {
-		color: $white;
-		font-size: 20px;
-		font-weight: $title-font-weight;
-		margin: 20px;
-	}
+.hero-background-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-background {
+  width: 100%;
+  margin-top: 20%;
+  text-align: center;
+
+  h1,
+  h2 {
+    font-size: 50px;
+    font-weight: $title-font-weight;
+    color: $white;
+    line-height: 20px;
+  }
+
+  h2 {
+    color: $button-color;
+  }
+
+  h4 {
+    color: $white;
+    font-size: 20px;
+    font-weight: $title-font-weight;
+    margin: 20px;
+  }
 }
 
 .btn-hero {
-	margin: 20px;
+  margin: 20px;
 }
 
 .hero-dotties {
-	margin-top: 15%;
+  margin-top: 15%;
 }
 
 .btn-call {
-	height: 50px;
-	width: 50px;
-	transform: translate(85vw, -25px);
-	margin-right: 3%;
+  height: 50px;
+  width: 50px;
+  transform: translate(85vw, -25px);
+  margin-right: 3%;
 }
 
-	//  ABOUT US  \\
+
+//  ABOUT US  \\
 
 
 .about-phone h2 {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .video {
-	height: 275px;
-	background-size: cover;
-	background-position: center center;
-	max-width: 445px;
-	box-shadow: -10px 11px 52px -2px rgba(0,0,0,0.49);
-	margin-bottom: 90px;
+  height: 275px;
+  background-size: cover;
+  background-position: center;
+  max-width: 445px;
+  box-shadow: -10px 11px 52px -2px rgba(0, 0, 0, 0.49);
+  margin-bottom: 90px;
 }
 
 .text p {
-	font-size: $description-font-size;
-	margin: 0;
-	padding: 0 30px;
-	line-height: 28px;
+  font-size: $description-font-size;
+  margin: 0;
+  padding: 0 30px;
+  line-height: 28px;
 }
 
 .btn-about {
-	margin: 40px;
+  margin: 40px;
 }
 
-	//  SERVICES  \\
+
+//  SERVICES  \\
 
 
 .services h2 {
-	color: $white;
+  color: $white;
 }
 
 .last {
-	border-right: 1px solid $paragraph-grey;
+  border-right: 1px solid $paragraph-grey;
 }
 
 .extend {
-	border-bottom: 50px solid $black;
+  border-bottom: 50px solid $black;
 }
 
 
-	//  OUR PROJECTS \\
+//  OUR PROJECTS \\
 
 
 .btn-projects {
-	margin: 20px auto;
-	margin-bottom: 50px;
-}	
+  margin: 20px auto;
+  margin-bottom: 50px;
+}
 
 
-	//  OUR TEAM \\
+//  OUR TEAM \\
 
 
 .team-background {
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	background-position: center center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
 }
 
-.our-team h2{
-	color: $white;
+.our-team h2 {
+  color: $white;
 }
 
 .flex-team {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team-wrapper {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 
-		//  CLIENTS  \\
+//  CLIENTS  \\
 
 
 .clients-background {
-	background-color: $button-bar-background;
-	border-bottom: 1px solid $border-grey;
+  background-color: $button-bar-background;
+  border-bottom: 1px solid $border-grey;
 }
+
 .clients {
-	@include component-description;
-	text-align: center;
-	max-width: 700px;
-	margin: 0 auto;
-	padding: 0 5%;
+  @include component-description;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
-.mark, .happy-client {
-	background-size: cover;
-	background-position: center center;
-	margin: 0 auto;
+
+.mark,
+.happy-client {
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
+
 .mark {
-	height: 38px;
-	width: 56px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+  height: 38px;
+  width: 56px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .happy-client {
-	width: 155px;
-	height: 160px;
-	margin-bottom: 30px;
-	&:hover{ 
-  	transform: scale(1.2);
-  	transition: 0.5s;  
-	}
+  width: 155px;
+  height: 160px;
+  margin-bottom: 30px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
 }
+
 .client-dotties {
-	height: 80px;
+  height: 80px;
 }
 
 
-		//  PARTNERS  \\
+//  PARTNERS  \\
 
 
 .partners-background {
-	display: flex;
-	justify-content: center;
-	padding:30px 50px;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 30px 50px;
+  flex-wrap: wrap;
 }
 
 .partner {
-	height: 100px;
-	width: 120px;
-	margin:0 30px;
-	background-size: cover;
-	background-position: center center;
-	&:hover{ 
-  	transform: scale(1.2);
-  	transition: 0.5s;  
-	}
+  height: 100px;
+  width: 120px;
+  margin: 0 30px;
+  background-size: cover;
+  background-position: center;
+
+  @media not all and (hover: none) {
+    &:hover {
+      transform: scale(1.3);
+      transition: 1s;
+    }
+  }
 }
 
 
-		//  PRICE  \\
+//  PRICE  \\
 
 
 .price-background {
-	background-color: $button-bar-background;
-	border-top: 1px solid $border-grey;
-	border-bottom: 1px solid $border-grey;
+  background-color: $button-bar-background;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
 }
 
 .price-wrap {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 
-		//  PREMIUM  \\
+//  PREMIUM  \\
 
 
 .premium-wrapper {
-	display: flex;
-	@include component-description;
-	border-bottom: 1px solid $border-grey;
-	p {
-		margin-left: 60px;
-		color: $title-paragraph-grey;
-		font-weight: $light-weight;
-		letter-spacing: -1px;
-		max-width: 350px;
-	}
-	h4 {
-		margin-top: 28px;
-	}
+  display: flex;
+  @include component-description;
+  border-bottom: 1px solid $border-grey;
+
+  p {
+    margin-left: 60px;
+    color: $title-paragraph-grey;
+    font-weight: $light-weight;
+    letter-spacing: -1px;
+    max-width: 350px;
+  }
+
+  h4 {
+    margin-top: 28px;
+  }
 }
 
 .premium-left-column {
-	width: 40%;
-	margin-right: 80px;
+  width: 40%;
+  margin-right: 80px;
 }
+
 .premium-right-column {
-	width: 40%;
-	padding-top: 30px;
+  width: 40%;
+  padding-top: 30px;
 }
+
 .tick-img {
-	height: 40px;
-	width: 40px;
-	margin-right: 20px;
-	margin-top: 20px;
-	background-size: cover;
-	background-position: center center;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
 }
+
 .premium {
-	max-width: 465px;
-	height: 400px;
-	background-size: cover;
-	background-position:  center right;
-	&:hover {
-    animation: wiggle 75ms infinite;
-	animation-timing-function: linear;
+  max-width: 465px;
+  height: 400px;
+  background-size: cover;
+  background-position: center right;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include wiggle;
+    }
   }
 }
+
 .premium-tick {
-	display: flex;
+  display: flex;
 }
+
 .premium-btn {
-	margin-top: 10px;
-	margin-bottom: 70px;
-	display: flex;
-	justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 
-		//  SOME FACTS \\
+//  SOME FACTS \\
 
 
 .some-facts {
-	color: $white;
+  color: $white;
 }
 
-		//  TELL ABOUT US \\
+
+//  TELL ABOUT US \\
 
 
 .share {
-	width: 50px;
-	height: 50px;
-	margin: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 
-.tell-paragraph p{
-	height: 12px;
-	line-height: 12px;
-	margin: 30px 100px 30px 0;
-	font-size: 12px;
-	color: $title-paragraph-grey;
+.tell-paragraph p {
+  height: 12px;
+  line-height: 12px;
+  margin: 30px 100px 30px 0;
+  font-size: 12px;
+  color: $title-paragraph-grey;
 }
 
-.tell-about, .share, .tell-icons {
-	display: flex;
-	justify-content: center;
-	border: 1px solid #fff;
+.tell-about,
+.share,
+.tell-icons {
+  display: flex;
+  justify-content: center;
+  border: 1px solid $white;
 }
 
 .tell-icons {
-	margin: 15px;
+  margin: 15px;
 }
 
 .pinterest-icon svg {
-	height: 35px;
+  height: 35px;
 }
 
-	//  CONTACT US  \\
+
+//  CONTACT US  \\
 
 
 .contact-us-background {
-	background-color: $button-bar-background;
-	border-top: 1px solid $border-grey;
-	border-bottom: 1px solid $border-grey;
+  background-color: $button-bar-background;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
 }
 
 .top-row {
-	display: flex;
+  display: flex;
 }
 
 input {
-	border: none;
-	padding-bottom: 10px;
-	background-color: $button-bar-background;
+  border: none;
+  padding-bottom: 10px;
+  background-color: $button-bar-background;
 }
 
 input::placeholder {
-	font-size: $paragraph-font-size;
-	font-weight: $title-font-weight;
-	color: $title-paragraph-grey;
+  font-size: $paragraph-font-size;
+  font-weight: $title-font-weight;
+  color: $title-paragraph-grey;
 }
 
 .input-row {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
-.name, .email {
-	width: 47%;
-	border-bottom: 1.5px solid $title-paragraph-grey;
-	margin-bottom: 30px;
+.name,
+.email {
+  width: 47%;
+  border-bottom: 1px solid $title-paragraph-grey;
+  margin-bottom: 30px;
 }
 
 .name {
-	margin-right: 6%;
+  margin-right: 6%;
 }
 
 .form {
-	max-width: 500px;
-	margin: 0 auto;
-	margin-top: 30px;
-	display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
 }
 
-.message, .subject {
-	flex: 2;
-	border-bottom: 1.5px solid $title-paragraph-grey;
+.message,
+.subject {
+  flex: 2;
+  border-bottom: 1px solid $title-paragraph-grey;
 }
 
 .message {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .contact-btn {
-	margin-top: 50px;
-	margin-bottom: 70px;
-	display: flex;
-	justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
 }
 
-	//  MAP  \\
+
+//  MAP  \\
 
 
 .map-img {
-	padding: 40px 40px 0 40px;
-	background-size: cover;
-	background-position: center center;
+  padding: 40px 40px 0 40px;
+  background-size: cover;
+  background-position: center;
 }
+
 .left-section {
-	max-width: 500px;
-	min-height: 300px;
-	margin-left: 10%;
-	padding: 50px 30px;
-	background: $white;
+  max-width: 500px;
+  min-height: 300px;
+  margin-left: 10%;
+  padding: 50px 30px;
+  background: $white;
 }
+
 .ico {
-	width: 35px;
-	height: 35px;
-	background-size: cover;
-	background-position: center center;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
 }
+
 .icowrap {
-	display: flex;
-	padding: 5px;
-	p {
-		color: $title-paragraph-grey;
-		font-size: $paragraph-font-size;
-		font-family: $font-mont;
-		font-weight: $paragraph-font-weight;
-		line-height: 35px;
-		padding-left: 20px;
-		margin: 0px;
-	}
+  display: flex;
+  padding: 5px;
+
+  p {
+    color: $title-paragraph-grey;
+    font-size: $paragraph-font-size;
+    font-family: $font-mont;
+    font-weight: $paragraph-font-weight;
+    line-height: 35px;
+    padding-left: 20px;
+    margin: 0px;
+  }
 }
 
 .back-to-top {
-	height: 40px;
-	width: 40px;
-	transform: translate(-20px, 20px);
-	margin-left: 30px;
-	img {
-	height: 15px;
-	}
+  height: 40px;
+  width: 40px;
+  transform: translate(-20px, 20px);
+  margin-left: 30px;
+
+  @media not all and (hover: none) {
+    button:hover {
+      background-color: $footer-icon-fill-collor;
+    }
+  }
+
+  img {
+    height: 15px;
+  }
 }
 
 
-	//  FOOTER  \\
+//  FOOTER  \\
 
 
 .footer {
-	padding: 30px;
+  padding: 30px;
 }
+
 .copyrights {
-	display: flex;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
 }
 
 .footer-col-1 {
-	max-height: 150px;
-h4 {
-	font-weight: $button-font-weight;
-	font-size: $heading-size;
-	color: $white;
-	margin-top: 140px;
-	}
-	svg {
-	fill: #373737;
-	background: radial-gradient(circle, rgba(255,255,255,1) 42%, rgba(55,55,55,1) 50%, rgba(55,55,55,1) 76%);
-	border-radius: 50%;
-	padding: 0px;
-	}
+  max-height: 150px;
+  
+  h4 {
+    font-weight: $button-font-weight;
+    font-size: $heading-size;
+    color: $white;
+    margin: 0;
+  }
+
+  .icon i {
+    background: $footer-icon-fill-collor;
+  }
 }
 
 .footer-col-2 {
-	p {
-	color: #999;
-	font-size: $paragraph-font-size;
-	font-weight: $light-weight;
-	line-height: 22px;
-	padding: 0 20px;
-	margin: 0;
-	}
+  p {
+    color: $footer-paragraph-collor;
+    font-size: $paragraph-font-size;
+    font-weight: $light-weight;
+    line-height: 22px;
+    padding: 0 20px;
+    margin: 0;
+  }
 }
 
 .footer-col-3 {
-	background: #373737;
-	h4 {
-	font-weight: $button-font-weight;
-	font-size: $heading-size;
-	color: #999;
-	text-align: center;
-	margin-top: 50px;
-	}
-	p {
-	text-align: center;
-	font-weight: $full-weight;
-	line-height: 0px;
-	color: #999;
-	padding: 0;
-	margin-bottom: 40px;
-	}
+  background: $footer-icon-fill-collor;
 
+  h4 {
+    font-weight: $button-font-weight;
+    font-size: $heading-size;
+    color: $footer-paragraph-collor;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  p {
+    text-align: center;
+    font-weight: $full-weight;
+    line-height: 0px;
+    color: $footer-paragraph-collor;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .footer-icon-bar {
-	justify-content: flex-start;
-	margin: 0; 
-}
-
-.footer-interface, .footer-youtube {
-	svg {
-	border: none;
-	}
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .footer-btn {
-	display: flex;
-	line-height: 50px;
-	justify-content: center;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	&:hover {
-    background-color: $button-color;
-  }
+  display: flex;
+  line-height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
