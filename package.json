@@ -1,39 +1,28 @@
 {
-  "name": "learning-git-2",
-  "version": "1.0.0",
-  "description": "My project link:",
+  "name": "awax-landing",
+  "version": "62.2.6",
+  "description": "My project link: https://github.com/bio8oid/Landing_Page_AWAX",
   "main": "index.js",
   "dependencies": {
-    "browser-sync": "^2.26.5",
-    "rimraf": "^2.6.3"
+    "browser-sync": "^2.26.7"
   },
   "devDependencies": {
-    "autoprefixer-cli": "^1.0.0",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.12.0",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^5.2.0"
+    "@babel/core": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
   },
   "scripts": {
-    "test": "npm run test:html",
-    "test:html": "nu-html-checker *.html",
-    "init-project": "npm install && npm-run-all init:*",
-    "init:dirs": "mkdirp sass css docs vendor images js",
-    "init:files": "touch README.md index.html sass/style.scss js/script.js",
-    "init:gitignore": "curl -k https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm-run-all build:*",
-    "build:clean": "rimraf css",
-    "build:sass": "node-sass --output-style compressed -o css sass",
-    "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "build-dev:sass": "node-sass --output-style expanded --source-map false -o css sass",
-    "build:remove": "rm -r docs",
-    "build:dirs": "mkdirp docs",
-    "build:copydir": "cp index.html -r css images vendor js docs/",
-    "watch": "npm-run-all -p watch:*",
-    "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all -p sassprefixer:*",
-    "watch:browser-sync": "browser-sync start --server --files css/*.css *.html js/*.js",
-    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css css/style.css"
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
